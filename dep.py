@@ -18,6 +18,8 @@ x = data['x']
 def show_page():
     st.write("<h1 style='text-align: center; color: blue;'>مدل تشخیص افسردگی اساسی</h1>", unsafe_allow_html=True)
     st.write("<h2 style='text-align: center; color: gray;'>علائم خود را وارد کنید</h2>", unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center; color: gray;'>Robo-Ai.ir طراحی شده توسط</h4>", unsafe_allow_html=True)
+    st.link_button("Robo-Ai بازگشت به", "https://robo-ai.ir")
     st.write("<h4 style='text-align: center; color: gray;'>True = بله , False = خیر</h4>", unsafe_allow_html=True)
 
     sadness = (True , False)
