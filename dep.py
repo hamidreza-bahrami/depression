@@ -4,6 +4,7 @@ import numpy as np
 import pickle 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+import time
 
 def load_model():
     with open('saved.pkl', 'rb') as file:
@@ -83,7 +84,7 @@ def show_page():
     button = st.button('معاینه و تشخیص')
     if button:
         with st.chat_message("assistant"):
-                with st.spinner('''درحال بررسی لطفا صبور باشید'''):
+                with st.spinner('''درحال بررسی، لطفا صبور باشید'''):
                     time.sleep(3)
                     st.success(u'\u2713''بررسی انجام شد')
                     x = np.array([[sadness, emptiness, allday1, joyless, allday2, Irritable, weight, insomnia, worriness,
